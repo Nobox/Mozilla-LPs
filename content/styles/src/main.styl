@@ -1,6 +1,8 @@
+@import '_variables'
 @import 'components/_reset'
 @import 'components/_fonts'
 @import 'components/_type'
+
 
 /**
  * Colors and variables
@@ -13,33 +15,16 @@ $color-orange = #e66000
  * Layout modules
  */
 
-a
-    &, &:visited
-        color $color-orange
-        text-decoration none
-
-    &:hover
-        text-decoration underline
-
-.row, .tabzilla
+.row
     margin 0 auto
     padding 0 em(10px)
     width em(980px)
-
-.tabzilla
-    position relative
-    z-index 10
 
 #outer-wrapper
     border-top 2px solid #fff
 
     *, *:after, *:before
         box-sizing border-box
-
-.visuallyhidden
-    color transparent
-    font 0/0 a
-    text-shadow none
 
 
 /**
@@ -67,8 +52,15 @@ a
     &:active
         box-shadow inset 0 2px 0 0 rgba(#000,0.2), inset 0 12px 24px 6px rgba(#000,0.2), inset 0 0 2px 2px rgba(#000,0.2)
 
-.button-green, .button-green:link, .button:visited
+.button-green, .button-green:link, .button-green:visited
+    @extend .button
     background linear-gradient(#81bc2e, #659324)
+
+.button-orange, .button-orange:link, .button-orange:visited
+    @extend .button
+    background #c96a1e url("../images/bg-button-orange.png") repeat-x
+    background linear-gradient(#e39926, #c96a1e)
+    font-weight bold
 
 .download-button
     display block
@@ -81,7 +73,7 @@ a
         padding 1.5em 1em 1.5em 4em
         background url("../images/download-arrow.png") no-repeat 1em center
 
-    .download-title
+    .download-title, .update-title
         font-size em(24px)
         font-weight 500
 
@@ -93,31 +85,71 @@ a
 
     a
         color white
+        text-decoration none
 
+        &:hover
+            text-decoration underline
+
+
+/**
+ * Different experience between users/guests
+ */
+
+.for-firefox, .for-not-firefox, .for-old-firefox
+    display none
+
+// Up-to-date Firefox visits
+.is-firefox
+    .for-firefox
+        display block
+    #header
+        background-image url("../images/bg-skateboard.jpg") !important
+
+// Not Firefox visits
+.not-firefox
+    .for-not-firefox
+        display block
+
+// Older than latest version of Firefox
+.old-firefox
+    .for-old-firefox
+        display block
+    #header
+        background-image url("../images/bg-surfer.jpg") !important
 
 /**
  * Header
  */
 
 #header
-    background url("../images/bg-page-surfer-es.jpg") no-repeat center top
+    clearfix()
+    padding em(70px) 0
+    height em(640px)
+    background url("../images/bg-rio-stairs.jpg") no-repeat center top
     background-size cover
     border-bottom 35px solid #00539f
     color white
 
-    &:lang(en)
-        background-image url("../images/bg-page-surfer-en.jpg")
-    &:lang(pt)
-        background-image url("../images/bg-page-surfer-pt.jpg")
+    .not-firefox &
+        background-image url("../images/bg-rio-stairs.jpg")
 
-    .row
-        position relative
-        padding em(70px) 0
-        height em(650px)
+    h1
+        margin 1.5em 0
+        color white
+        font-size em(48px)
+        letter-spacing -0.25px
+        line-height 1.2
+
+        strong
+            display block
+            font-family 'Open Sans', sans-serif
+            font-size 150% // 72px
+            font-weight normal
 
 #features
     clearfix()
-    margin 0 -1em
+    float left
+    margin 0 -.5em
     padding 0
     font-family 'Open Sans Light', sans-serif
     font-size em(32px)
@@ -126,41 +158,29 @@ a
 
     li
         float left
-        padding 1em
+        padding 1em .5em
         border-right 1px dotted white
 
-        &:last-child
+        &.last-child
+            padding .3em .5em
             border 0
 
 
 /**
- * Download CTAs
+ * Downloads CTAs
  */
 
 #downloads
-    absolute bottom 2em right -1em
-    width em(325px)
-    text-align center
+    float right
+    margin-top 1em
 
-    .download-button
-        display inline-block
-        margin-right 1em
-        width 16em
+    .download-translator
+        margin-top 1em
 
-.download-vans
-    display inline-block
-    width 15em
-
-    .button
-        margin-bottom 1em
-        padding 1em
-        font-size em(17px)
-        font-weight normal
-        text-shadow 0 -1px rgba(#000,.50)
-
-        strong
-            display block
-            font-size 105%
+        .button-orange
+            padding .5em 0 .7em
+            width 13em
+            font-size em(20px)
 
 /**
  * Panel tabs
@@ -168,10 +188,9 @@ a
 
 $tablist-height = em(220px)
 
-
 #tabs
     clearfix()
-    margin 0 0 em(50px)
+    margin 0 0 em(15px)
     overflow hidden
     padding em(50px) 0 0
     list-style-type none
@@ -180,14 +199,11 @@ $tablist-height = em(220px)
     .tab
         position relative
         float left
-        padding 0 4em
+        padding 0 2em
         width 33.33%
 
-        &.tab:lang(en)
-            padding 0 1em
-
         &:after
-            absolute top -1em right -36px
+            absolute top -3em right -36px
             size 36px 201px
             background url("../images/bg-divider.png") no-repeat center
             content ''
@@ -202,37 +218,85 @@ $tablist-height = em(220px)
         font-family 'Open Sans', sans-serif
 
     p
-        margin 0
         font-size em(14px)
-        text-shadow 0 1px rgba(#fff,.75)
 
-    .link
-        display block
-        margin-top .5em
-        color $color-orange
-        font-size em(18px)
-        font-weight 700
+    a[role="tab"]
+        &, &:visited
+            color $color-orange
+            font-weight bold
+            line-height 1.7
+            text-decoration none
 
-    a.link:after
-        content ' »'
+            &:after
+                content ' »'
+
+        &:hover, &:focus
+            outline none
+            text-decoration underline
+
+    &.is-active
+        height $tablist-height
+        border-bottom 1px dotted #6a7b86
+
+        .tab
+            height $tablist-height - em(50px)
+            position relative
+
+            h2, p
+                color transparent
+                font 0/0 a
+            a
+                absolute top left
+                display block
+                size 100%
+
+    .tab
+        &.is-active
+            background-position center bottom
+            background-repeat no-repeat
+            image "../images/bg-tab-selected.png" 25px 14px
+
+        &:after
+            absolute top -1em right -36px
+            size 36px 201px
+            background url("../images/bg-divider.png") no-repeat center
+            content ''
 
 // Panel icons in pseudo-elements for more control
 .icon
     display block
     margin 0 auto 2em
-    size 96px 85px
-    background-repeat no-repeat
-    image "../images/bg-section-icons.png" 341px 85px
+    size 100px
+    background-repeat none
+    image "../images/bg-section-icons.png" 519px 227px
 
-.icon-theme
-    background-position 0 0
+.icon-translate
+    width 93px
+    background-position 0 -127px
 
-.icon-social
-    background-position -120px 0
+    .tab.is-active &
+        background-position 0 0
 
-.icon-blog
-    width 118px
-    background-position -223px 0
+.icon-nonprofit
+    width 110px
+    background-position -130px -127px
+
+    .tab.is-active &
+        background-position -130px 0
+
+.icon-privacy
+    width 129px
+    background-position -259px -127px
+
+    .tab.is-active &
+        background-position -259px 0
+
+.icon-join
+    width 115px
+    background-position -404px -127px
+
+    .tab.is-active &
+        background-position -404px -127px
 
 
 /**
@@ -240,28 +304,45 @@ $tablist-height = em(220px)
  */
 
 #main
-    overflow auto
     background url("../images/bg-content.jpg") repeat-x top
     border-top 1px solid white
+    min-height em(460px)
 
 .panel
+    position relative
     display none
-    margin-bottom em(50px)
 
     h2
-        margin 0 0 1em
+        margin 0 0 .5em
         color $color-blue-light
         font-size em(24px)
         font-family 'Open Sans', sans-serif
 
     p
         margin 0
-        width 80%
+        width 60%
         font-size em(18px)
 
-#panel-1
+    img
+        absolute top 2em right
+        width em(130px)
+        border 3px solid white
+        box-shadow 0 2px 3px rgba(#000,.25)
+
+    .button-green
+        float left
+        margin-top 1em
+        padding .3em
+        width 10em
+        font-size em(14px)
+
+#panel-2
+    img
+        width em(140px)
+
     p
-        width 60%
+        width 75%
+
 
 /**
  * Footer

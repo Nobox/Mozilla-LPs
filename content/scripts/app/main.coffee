@@ -16,13 +16,23 @@ define (require) ->
 
         constructor: ->
             console.log('Main class was built without side effects')
+            console.log(bowser)
 
         init: ->
+            # Add classes depending on user's browser
+            body = $('body')
+
+            console.log(parseInt(bowser.version))
+
+            if not bowser.firefox
+                body.addClass('not-firefox')
+            else if bowser.firefox and parseInt(bowser.version) < 25
+                body.addClass('old-firefox')
+            else
+                body.addClass('is-firefox')
+
             $(document).ready =>
                 @events()
-
-                # Add classes depending on user's browser
-                console.log(bowser)
 
         events: ->
             $tablist = $('#tabs')
