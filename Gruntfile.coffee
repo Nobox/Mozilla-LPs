@@ -9,8 +9,9 @@ module.exports = (grunt) ->
         # Commonly used file paths
         paths:
             public: 'content'
-            images: '<%= paths.public %>/img'
+            images: '<%= paths.public %>/images'
             scripts: '<%= paths.public %>/scripts'
+            coffee: '<%= paths.scripts %>/src'
             styles: '<%= paths.public %>/styles'
             stylus_source: '<%= paths.styles %>/src'
 
@@ -63,4 +64,5 @@ module.exports = (grunt) ->
      Load Grunt plugins to use
     ###
     grunt.loadNpmTasks 'grunt-contrib-stylus'
+    grunt.loadNpmTasks 'grunt-contrib-coffee'
     grunt.loadNpmTasks 'grunt-contrib-watch'
