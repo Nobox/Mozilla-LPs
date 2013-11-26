@@ -32,7 +32,7 @@ require_once('../lang/lang-' . $lang . '.php');
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css">
-        <script src="scripts/vendor/modernizr.custom.js"></script>
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
     </head>
     <body>
         <div id="outer-wrapper">
