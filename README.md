@@ -1,4 +1,4 @@
-# Mozilla || Campaigns Landing Pages
+# Mozilla Campaigns Landing Pages
 
 Mozilla landing pages for several campaigns.
 
@@ -9,6 +9,6 @@ Mozilla landing pages for several campaigns.
 * **firefox-brasil** - Brasil campagn LP
 
 ### Dependencies
-x
+
 * jQuery
 * [Bowser](https://github.com/ded/bowser)
