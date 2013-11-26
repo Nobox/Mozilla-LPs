@@ -1,0 +1,9 @@
+/app/config/dev/database.php
+/bootstrap/compiled.php
+/vendor
+/content/styles/*.css
+dist
+.DS_Store
+node_modules
+components
+bower_components

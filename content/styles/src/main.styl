@@ -1,0 +1,309 @@
+@import 'components/_reset'
+@import 'components/_fonts'
+@import 'components/_type'
+
+/**
+ * Colors and variables
+ */
+
+$color-blue-light = #0095dd
+$color-orange = #e66000
+
+/**
+ * Layout modules
+ */
+
+a
+    &, &:visited
+        color $color-orange
+        text-decoration none
+
+    &:hover
+        text-decoration underline
+
+.row, .tabzilla
+    margin 0 auto
+    padding 0 em(10px)
+    width em(980px)
+
+.tabzilla
+    position relative
+    z-index 10
+
+#outer-wrapper
+    border-top 2px solid #fff
+
+    *, *:after, *:before
+        box-sizing border-box
+
+.visuallyhidden
+    color transparent
+    font 0/0 a
+    text-shadow none
+
+
+/**
+ * Sandstone
+ */
+
+// Buttons
+.button, .button:link, .button:visited
+    display block
+    background linear-gradient(#43a6e2,#277ac1)
+    border 0
+    border-radius .25em
+    box-shadow 0 1px 0 0 rgba(#000,0.2), inset 0 -1px 0 0 rgba(#000,0.3)
+    color white
+    font-family 'Open Sans', sans-serif
+    text-align center
+    text-decoration none
+    text-shadow 0 1px 0 rgba(#000, .25)
+    transition all linear .25s
+
+    &:hover, &:focus
+        box-shadow 0 1px 0 0 rgba(#000,0.2), inset 0 -1px 0 0 rgba(#000,0.3), inset 0 12px 24px 2px rgba(#fff,.25)
+        text-decoration none
+
+    &:active
+        box-shadow inset 0 2px 0 0 rgba(#000,0.2), inset 0 12px 24px 6px rgba(#000,0.2), inset 0 0 2px 2px rgba(#000,0.2)
+
+.button-green, .button-green:link, .button:visited
+    background linear-gradient(#81bc2e, #659324)
+
+.download-button
+    display block
+
+    .download-link
+        @extend .button-green
+
+    .download-content
+        display block
+        padding 1.5em 1em 1.5em 4em
+        background url("../images/download-arrow.png") no-repeat 1em center
+
+    .download-title
+        font-size em(24px)
+        font-weight 500
+
+.download-other
+    display block
+    padding .7em 0
+    font-size em(11px)
+    text-align center
+
+    a
+        color white
+
+
+/**
+ * Header
+ */
+
+#header
+    background url("../images/bg-page-surfer-es.jpg") no-repeat center top
+    background-size cover
+    border-bottom 35px solid #00539f
+    color white
+
+    &:lang(en)
+        background-image url("../images/bg-page-surfer-en.jpg")
+    &:lang(pt)
+        background-image url("../images/bg-page-surfer-pt.jpg")
+
+    .row
+        position relative
+        padding em(70px) 0
+        height em(650px)
+
+#features
+    clearfix()
+    margin 0 -1em
+    padding 0
+    font-family 'Open Sans Light', sans-serif
+    font-size em(32px)
+    list-style none
+    text-align center
+
+    li
+        float left
+        padding 1em
+        border-right 1px dotted white
+
+        &:last-child
+            border 0
+
+
+/**
+ * Download CTAs
+ */
+
+#downloads
+    absolute bottom 2em right -1em
+    width em(325px)
+    text-align center
+
+    .download-button
+        display inline-block
+        margin-right 1em
+        width 16em
+
+.download-vans
+    display inline-block
+    width 15em
+
+    .button
+        margin-bottom 1em
+        padding 1em
+        font-size em(17px)
+        font-weight normal
+        text-shadow 0 -1px rgba(#000,.50)
+
+        strong
+            display block
+            font-size 105%
+
+/**
+ * Panel tabs
+ */
+
+$tablist-height = em(220px)
+
+
+#tabs
+    clearfix()
+    margin 0 0 em(50px)
+    overflow hidden
+    padding em(50px) 0 0
+    list-style-type none
+    text-align center
+
+    .tab
+        position relative
+        float left
+        padding 0 4em
+        width 33.33%
+
+        &.tab:lang(en)
+            padding 0 1em
+
+        &:after
+            absolute top -1em right -36px
+            size 36px 201px
+            background url("../images/bg-divider.png") no-repeat center
+            content ''
+
+        &.last:after
+            display none
+
+    h2
+        margin 0 0 .5em
+        color $color-blue-light
+        font-size em(24px)
+        font-family 'Open Sans', sans-serif
+
+    p
+        margin 0
+        font-size em(14px)
+        text-shadow 0 1px rgba(#fff,.75)
+
+    .link
+        display block
+        margin-top .5em
+        color $color-orange
+        font-size em(18px)
+        font-weight 700
+
+    a.link:after
+        content ' »'
+
+// Panel icons in pseudo-elements for more control
+.icon
+    display block
+    margin 0 auto 2em
+    size 96px 85px
+    background-repeat no-repeat
+    image "../images/bg-section-icons.png" 341px 85px
+
+.icon-theme
+    background-position 0 0
+
+.icon-social
+    background-position -120px 0
+
+.icon-blog
+    width 118px
+    background-position -223px 0
+
+
+/**
+ * Page content
+ */
+
+#main
+    overflow auto
+    background url("../images/bg-content.jpg") repeat-x top
+    border-top 1px solid white
+
+.panel
+    display none
+    margin-bottom em(50px)
+
+    h2
+        margin 0 0 1em
+        color $color-blue-light
+        font-size em(24px)
+        font-family 'Open Sans', sans-serif
+
+    p
+        margin 0
+        width 80%
+        font-size em(18px)
+
+#panel-1
+    p
+        width 60%
+
+/**
+ * Footer
+ */
+
+#footer
+    clearfix()
+    padding em(50px) 0
+
+.logo-mozilla
+    display block
+    float left
+
+    img
+        display block
+        size 98px 25px
+
+#social-pages
+    float right
+
+    span
+        margin-left 1em
+
+// Social footer links
+.social
+    display inline-block
+    size 29px 30px
+    background url("../images/icons-social.png") no-repeat
+    hide-text()
+    vertical-align middle
+
+    &:hover
+        opacity .9
+
+.social-facebook
+    @extend .social
+    background-position 0 0
+
+.social-twitter
+    @extend .social
+    background-position -33px 0
+
+.social-google
+    @extend .social
+    background-position -67px 0

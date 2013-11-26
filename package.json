@@ -1,0 +1,57 @@
+{
+  "name": "lightsaber",
+  "version": "2.0.0",
+  "description": "An elegant weapon, for a more civilized age.",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Nobox/lightsaber1.5.git"
+  },
+  "keywords": [
+    "laravel",
+    "php",
+    "angular"
+  ],
+  "author": "Nobox Development <developers@nobox.com>",
+  "contributors": [
+    {
+      "name": "Alberto Estrada",
+      "email": "alberto@nobox.com"
+    },
+    {
+      "name": "Antonio Rodriguez",
+      "email": "antonio@nobox.com"
+    },
+    {
+      "name": "Javier Velazquez",
+      "email": "javier@nobox.com"
+    },
+    {
+      "name": "Jonathan Torres",
+      "email": "jonathan@nobox.com"
+    },
+    {
+      "name": "Nizar Khalife",
+      "email": "nizar@nobox.com"
+    },
+    {
+      "name": "Waldemar Figueroa",
+      "email": "waldemar@nobox.com"
+    }
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-requirejs": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.0",
+    "grunt-contrib-stylus": "~0.5.0",
+    "grunt-contrib-watch": "~0.4.4",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-imagemin": "~0.3.0",
+    "grunt-ftp-deploy": "~0.0.10",
+    "grunt-bower-requirejs": "~0.7.1",
+    "grunt-shell": "~0.3.0",
+    "stylus": "~0.34.1",
+    "stylus-type-utils": "0.0.3"
+  }
+}
