@@ -26,7 +26,8 @@
         <link rel="shortcut icon" href="favicon.ico">
         <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css">
-        <script src="scripts/vendor/modernizr.custom.js"></script>
+
+        <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
     </head>
     <body>
         <div id="outer-wrapper">
@@ -133,7 +134,11 @@
             </footer><!--/#footer-->
 
         </div><!--/#outer-wrapper-->
-        <script data-main="scripts/main" src="bower_components/requirejs/require.js"></script>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="bower_components/bowser/bowser.min.js"></script>
+        <script src="scripts/main.js"></script>
         <script src="//mozorg.cdn.mozilla.net/pt-BR/tabzilla/tabzilla.js"></script>
     </body>
 </html>

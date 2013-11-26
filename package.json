@@ -52,6 +52,8 @@
     "grunt-bower-requirejs": "~0.7.1",
     "grunt-shell": "~0.3.0",
     "stylus": "~0.34.1",
-    "stylus-type-utils": "0.0.3"
+    "stylus-type-utils": "0.0.3",
+    "grunt-contrib-coffee": "~0.7.0",
+    "grunt-contrib-uglify": "~0.2.7"
   }
 }
