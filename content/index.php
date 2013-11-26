@@ -61,7 +61,7 @@ require_once('../lang/lang-' . $lang . '.php');
                         </div>
                         <?php else: ?>
                         <div class="download-vans">
-                            <a class="button" href="https://marketplace.firefox.com/?lang=<?php echo $lang ?>&amp;utm_source=VansLP&amp;utm_medium=Button&amp;utm_campaign=VansSurf&amp;utm_content=<?php echo $lang ?>" target="_blank">
+                            <a class="button" href="https://marketplace.firefox.com/app/vtcs?lang=<?php echo $lang ?>&amp;utm_source=VansLP&amp;utm_medium=Button&amp;utm_campaign=VansSurf&amp;utm_content=<?php echo $lang ?>" target="_blank">
                                 <?php echo $trans['download.vans'] ?>
                             </a>
                         </div>
