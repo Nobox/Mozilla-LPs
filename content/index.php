@@ -1,9 +1,9 @@
 <?php
 // Localisation
-$lang = isset($_GET['lang']) ? $_GET['lang'] : 'es';
+$lang = isset($_GET['lang']) ? $_GET['lang'] : 'en';
 
 if ($lang != 'es' && $lang != 'pt' && $lang != 'en')
-    $lang = 'es';
+    $lang = 'en';
 
 $locale = '';
 switch ($lang) {
