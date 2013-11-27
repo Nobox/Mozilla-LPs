@@ -1,0 +1,51 @@
+@import '../../../bower_components/normalize-css/normalize.css'
+
+/*=================================
+=            Variables            =
+=================================*/
+
+// Body
+$body-bg ?= #fff
+
+// Text selection
+$selection-color ?= #b3d4fc
+
+
+/*=============================
+=            Reset            =
+=============================*/
+
+html
+    font-size 1em
+    line-height 1.4
+
+body
+    position relative
+    padding 0
+    background $body-bg
+    color #333
+    font-family 'Open Sans', sans-serif
+
+::-moz-selection
+    background $selection-color
+    text-shadow none
+
+::selection
+    background $selection-color
+    text-shadow none
+
+
+
+// Grid Defaults to get images and embeds to work properly
+img, object, embed
+    height auto
+    max-width 100%
+
+object, embed
+    height 100%
+
+// Get rid of gap under images by making them display: inline-block; by default
+img
+    -ms-interpolation-mode bicubic
+    display inline-block
+    vertical-align middle
