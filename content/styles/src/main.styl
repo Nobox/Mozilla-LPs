@@ -73,7 +73,7 @@ $color-orange = #e66000
         padding 1.5em 1em 1.5em 4em
         background url("../images/download-arrow.png") no-repeat 1em center
 
-    .download-title, .update-title
+    .download-title
         font-size em(24px)
         font-weight 500
 
@@ -96,24 +96,24 @@ $color-orange = #e66000
  */
 
 .for-firefox, .for-not-firefox, .for-old-firefox
-    display none
+    display none  !important
 
 // Up-to-date Firefox visits
 .is-firefox
     .for-firefox
-        display block
+        display block !important
     #header
         background-image url("../images/bg-skateboard.jpg") !important
 
 // Not Firefox visits
 .not-firefox
     .for-not-firefox
-        display block
+        display block !important
 
 // Older than latest version of Firefox
 .old-firefox
     .for-old-firefox
-        display block
+        display block !important
     #header
         background-image url("../images/bg-surfer.jpg") !important
 
