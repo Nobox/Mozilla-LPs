@@ -53,6 +53,12 @@ require_once('../lang/lang-' . $lang . '.php');
                                     <strong class="download-title">Download now</strong>
                                 </span>
                             </a>
+                            <a class="download-link for-old-firefox" href="http://www.mozilla.org/pt-BR/firefox/new/#download-fx?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=upgrade_users" target="_blank">
+                                <span class="download-content">
+                                    <strong class="download-title">Atualize agora</strong>
+                                </span>
+                            </a>
+
                             <small class="download-other">
                                 <a href="http://www.mozilla.org/en-US/firefox/all/" target="_blank">Systems &amp; Languages</a> |
                                 <a href="http://www.mozilla.org/en-US/firefox/25.0.1/releasenotes/" target="_blank">What's New</a> |
