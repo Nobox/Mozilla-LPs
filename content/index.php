@@ -138,7 +138,7 @@
                     <aside id="social-pages">
                         Siga a gente:
                         <span>
-                            <a class="social-facebook" href="http://facebook.com/firefox" target="_blank">Facebook</a>
+                            <a class="social-facebook" href="https://www.facebook.com/Firefox" target="_blank">Facebook</a>
                             <a class="social-twitter" href="https://twitter.com/firefoxbrasil" target="_blank">Twitter</a>
                             <a class="social-google" href="https://plus.google.com/+firefox/" target="_blank">Google+</a>
                         </span>
@@ -153,5 +153,15 @@
         <script src="bower_components/bowser/bowser.min.js"></script>
         <script src="scripts/main.js"></script>
         <script src="//mozorg.cdn.mozilla.net/pt-BR/tabzilla/tabzilla.js"></script>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-35433268-47', 'usefirefox.org');
+          ga('send', 'pageview');
+        </script>
     </body>
 </html>
