@@ -37,6 +37,13 @@ class Mozilla
             panel = $this.attr('href')
             $(panel).show().focus()
 
+            # Track click event
+            ga('send', 'event', 'tab', 'click', $this.closest('.tab').find('h2').text())
+
+        # Track clicks on footer social buttons with events
+        $('#social-pages').on 'click', 'a', (e) ->
+            ga('send', 'event', 'social button', 'click', $(this).text())
+
 
 $(document).ready ->
     site = new Mozilla

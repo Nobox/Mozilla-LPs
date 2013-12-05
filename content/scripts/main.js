@@ -29,7 +29,7 @@
       $tablist = $('#tabs');
       $tabs = $tablist.find('.tab');
       $panels = $('#main').find('.panel');
-      return $tabs.on('click', 'a[role="tab"]', function(e) {
+      $tabs.on('click', 'a[role="tab"]', function(e) {
         var $this, panel;
         e.preventDefault();
         $this = $(this);
@@ -40,7 +40,12 @@
         $this.closest('.tab').addClass('is-active');
         $panels.hide();
         panel = $this.attr('href');
-        return $(panel).show().focus();
+        $(panel).show().focus();
+        return ga('send', 'event', 'tab', 'click', $this.closest('.tab').find('h2').text());
+      });
+      return $('#social-pages').on('click', 'a', function(e) {
+        console.log('social', $(this).text());
+        return ga('send', 'event', 'social button', 'click', $(this).text());
       });
     };
 
