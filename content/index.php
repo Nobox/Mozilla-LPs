@@ -73,7 +73,7 @@ require_once('../lang/lang-' . $lang . '.php');
             <main id="main" role="main">
                 <div class="row">
                     <ul id="tabs">
-                        <li class="tab">
+                        <li id="tab-theme" class="tab">
                             <i class="icon icon-theme" role="presentation"></i>
                             <h2><?php echo $trans['theme.title'] ?></h2>
                             <p>
@@ -81,7 +81,7 @@ require_once('../lang/lang-' . $lang . '.php');
                                 <a class="link" href="https://addons.mozilla.org/<?php echo $locale ?>/firefox/addon/vans-triple-crown-of-surfing/?utm_source=VansLP&amp;utm_medium=Crosspromo&amp;utm_campaign=VansSurf&amp;utm_content=<?php echo $lang ?>" target="_blank"><?php echo $trans['learn_more'] ?></a>
                             </p>
                         </li>
-                        <li class="tab">
+                        <li id="tab-social" class="tab">
                             <i class="icon icon-social" role="presentation"></i>
                             <h2><?php echo $trans['social.title'] ?></h2>
                             <p>
@@ -92,12 +92,12 @@ require_once('../lang/lang-' . $lang . '.php');
                                 </span>
                             </p>
                         </li>
-                        <li class="tab last">
-                            <i class="icon icon-blog" role="presentation"></i>
-                            <h2><?php echo $trans['blog.title'] ?></h2>
+                        <li id="tab-sidebar" class="tab">
+                            <i class="icon icon-sidebar" role="presentation"></i>
+                            <h2><?php echo $trans['sidebar.title'] ?></h2>
                             <p>
-                                <?php echo $trans['blog.desc'] ?>
-                                <a class="link" href="<?php echo $trans['blog.url'] ?>?utm_source=VansLP&amp;utm_medium=Crosspromo&amp;utm_campaign=VansSurf&amp;utm_content=<?php echo $lang ?>" target="_blank">
+                                <?php echo $trans['sidebar.desc'] ?>
+                                <a class="link" href="http://www.vanstriplecrownofsurfing.com/vtcs13/firefox?utm_source=VansLP&amp;utm_medium=Crosspromo&amp;utm_campaign=VansSurf&amp;utm_content=<?php echo $lang ?>" target="_blank">
                                     <?php echo $trans['learn_more'] ?>
                                 </a>
                             </p>

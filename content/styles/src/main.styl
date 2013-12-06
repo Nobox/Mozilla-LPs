@@ -178,23 +178,17 @@ $tablist-height = em(220px)
     list-style-type none
     text-align center
 
-    .tab
-        position relative
-        float left
-        padding 0 4em
-        width 33.33%
+.tab
+    position relative
+    float left
+    padding 0 4em
+    width 33.33%
 
-        &.tab:lang(en)
-            padding 0 1em
-
-        &:after
-            absolute top -1em right -36px
-            size 36px 201px
-            background url("../images/bg-divider.png") no-repeat center
-            content ''
-
-        &.last:after
-            display none
+    &:after
+        absolute top -1em right -36px
+        size 36px 201px
+        background url("../images/bg-divider.png") no-repeat center
+        content ''
 
     h2
         margin 0 0 .5em
@@ -213,9 +207,34 @@ $tablist-height = em(220px)
         color $color-orange
         font-size em(18px)
         font-weight 700
+        white-space nowrap
 
     a.link:after
         content ' »'
+
+#tab-theme
+    padding 0 4em
+
+    &:lang(en)
+        padding 0 6em
+
+#tab-social
+    padding 0 4em
+
+    &:lang(en)
+        padding 0 5em
+
+#tab-sidebar
+    &:lang(es)
+        padding 0 1em
+
+    &:lang(en), &:lang(pt)
+        padding 0 2em
+
+    // hide divider
+    &:after
+        display none
+
 
 // Panel icons in pseudo-elements for more control
 .icon
@@ -231,8 +250,8 @@ $tablist-height = em(220px)
 .icon-social
     background-position -120px 0
 
-.icon-blog
-    width 118px
+.icon-sidebar
+    width 96px
     background-position -223px 0
 
 
