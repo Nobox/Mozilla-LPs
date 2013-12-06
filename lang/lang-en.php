@@ -5,7 +5,7 @@
  */
 
 $trans = array(
-    'site.title' => 'Vive lo que te hace sentir vivo',
+    'site.title' => 'Live what you love',
 
     'meta.description' => '',
     'meta.keywords' => '',
