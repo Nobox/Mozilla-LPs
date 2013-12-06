@@ -42,7 +42,6 @@
         return ga('send', 'event', 'tab', 'click', $this.closest('.tab').find('h2').text());
       });
       return $('#social-pages').on('click', 'a', function(e) {
-        console.log('social', $(this).text());
         return ga('send', 'event', 'social button', 'click', $(this).text());
       });
     };

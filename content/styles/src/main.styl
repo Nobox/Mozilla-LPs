@@ -102,8 +102,6 @@ $color-orange = #e66000
 .is-firefox
     .for-firefox
         display block !important
-    #header
-        background-image url("../images/bg-skateboard.jpg") !important
 
 // Not Firefox visits
 .not-firefox
@@ -114,8 +112,6 @@ $color-orange = #e66000
 .old-firefox
     .for-old-firefox
         display block !important
-    #header
-        background-image url("../images/bg-surfer.jpg") !important
 
 /**
  * Header
@@ -125,13 +121,16 @@ $color-orange = #e66000
     clearfix()
     padding em(70px) 0
     height em(640px)
-    background url("../images/bg-rio-stairs.jpg") no-repeat center top
+    background no-repeat center top
     background-size cover
     border-bottom 35px solid #00539f
     color white
 
-    .not-firefox &
-        background-image url("../images/bg-rio-stairs.jpg")
+    .is-firefox &
+        background-image url("../images/bg-skateboard.jpg") !important
+
+    .old-firefox &
+        background-image url("../images/bg-page-surfer.jpg") !important
 
     h1
         margin 1.5em 0
@@ -139,6 +138,9 @@ $color-orange = #e66000
         font-size em(48px)
         letter-spacing -0.25px
         line-height 1.2
+
+        &.for-firefox
+            margin 1em 3em 1em 0
 
         strong
             display block

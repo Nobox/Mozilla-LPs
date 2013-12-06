@@ -1,9 +1,8 @@
 <?php
     // Random headers for non-Firefox users
     $headlines = array(
-        'e seja mais rápido na Web.',
-        'e navegue no seu ritmo.',
-        'e naveuge numa Web mais privativa.',
+        'e seja mais rápido na web.',
+        'e navegue com paz de espírito.',
         'e navegue por uma internet melhor.'
     );
 
@@ -40,8 +39,8 @@
                     <img src="images/logo-firefox.png" alt="Firefox" width="216" height="81">
 
                     <h1 class="for-not-firefox"><strong>Use o Firefox</strong> <?php echo $headlines[array_rand($headlines)] ?></h1>
-                    <h1 class="for-old-firefox"><strong>Atualize seu Firefox</strong> e seja mais rápido na Web.</h1>
-                    <h1 class="for-firefox"><strong>Baixe o tradutor</strong> e faça o Firefox ser ainda melhor.</h1>
+                    <h1 class="for-old-firefox"><strong>Faça o upgrade do Firefox</strong> e seja mais rápido na web.</h1>
+                    <h1 class="for-firefox"><strong>Use o Firefox.</strong> É mais rápido que os outros navegadores e fala a sua língua.</h1>
 
                     <ul id="features">
                         <li>Rápido</li>
@@ -57,7 +56,7 @@
                             </a>
                             <a class="download-link for-old-firefox" href="http://www.mozilla.org/pt-BR/firefox/new/#download-fx?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=upgrade_users" target="_blank">
                                 <span class="download-content">
-                                    <strong class="download-title">Atualize agora</strong>
+                                    <strong class="download-title">Faça o Upgrade agora</strong>
                                 </span>
                             </a>
 
@@ -69,7 +68,7 @@
                         </div>
                         <div class="download-translator for-firefox">
                             <a class="button-orange" href="https://addons.mozilla.org/pt-BR/firefox/addon/google-translator-for-firefox/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=learnhow_uptodateusers" target="_blank">
-                                Instale o Tradutor
+                                Instale o tradutor
                             </a>
                         </div>
                     </div>
@@ -88,19 +87,19 @@
                         <li id="tab-2" class="tab">
                             <i class="icon icon-privacy" role="presentation"></i>
                             <h2>Privativo</h2>
-                            <p>Nós respeitamos a sua privacidade e cada clique ligado a ela. <a href="#panel-2" role="tab" aria-selected="false">Saiba mais</a></p>
+                            <p>Nós respeitamos a sua privacidade e cada clique seu. <a href="#panel-2" role="tab" aria-selected="false">Saiba mais</a></p>
                         </li>
                         <li id="tab-3" class="tab">
                             <i class="icon icon-nonprofit" role="presentation"></i>
                             <h2>Sem lucro</h2>
-                            <p>Nossa missão foi sempre a mesma: inovar para você. <a href="#panel-3" role="tab" aria-selected="false">Saiba mais</a></p>
+                            <p>Nossa missão sempre foi a mesma: inovar para você. <a href="#panel-3" role="tab" aria-selected="false">Saiba mais</a></p>
                         </li>
                     </ul>
 
                     <div id="panel-1" class="panel" role="tabpanel" aria-labelledby="tab-1">
                         <h2>Traduza</h2>
                         <img src="images/img-translate.jpg" alt="">
-                        <p>O Google Translator para Firefox é uma das milhres de extensões que você pode instalar para personalizar a sua experiência. Baixe o Firefox e instale esta incrível extensão.</p>
+                        <p>Utilize este complemento para traduzir qualquer página para o português com apenas um clique. Baixe o Firefox e instale este complemento incrível.</p>
 
                         <a class="button-green for-firefox" href="https://addons.mozilla.org/firefox/downloads/latest/46308/addon-46308-latest.xpi?src=dp-btn-primary?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_uptodateusers">Baixe o tradutor</a>
                         <a class="button-green for-old-firefox" href="https://addons.mozilla.org/firefox/downloads/latest/46308/addon-46308-latest.xpi?src=dp-btn-primary?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_users">Baixe o tradutor</a>
@@ -110,7 +109,7 @@
                     <div id="panel-2" class="panel" role="tabpanel" aria-labelledby="tab-2">
                         <h2>Privativo</h2>
                         <img src="images/img-privacy.jpg" alt="">
-                        <p>Nós respeitamos a sua privacidade e cada clique ligado a ela. Por isso o Firefox oferece a você total controle sobre a sua navegação e privacidade.</p>
+                        <p>O Firefox respeita a sua privacidade deixando você com total controle dos seus dados com recursos como Não Me Rastreie e Navegação Privativa.</p>
 
                         <a class="button-green for-firefox" href="http://www.mozilla.org/pt-BR/firefox/features/#advancedsecurity?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_uptodateusers">Saiba mais</a>
                         <a class="button-green for-old-firefox" href="http://www.mozilla.org/pt-BR/firefox/features/#advancedsecurity?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_users">Saiba mais</a>
@@ -120,7 +119,7 @@
                     <div id="panel-3" class="panel" role="tabpanel" aria-labelledby="tab-3">
                         <h2>Sem lucro</h2>
                         <img src="images/img-nonprofit.jpg" alt="">
-                        <p>A Firefox é uma organização apoiada por brasileiros como você que acredita que abertura, i novaça e oportunidades são chave para manter a saúde da internet.</p>
+                        <p>A Firefox é uma organização sem ânimo de lucro apoiada por centenas de desenvolvidores brasileiros e apoiadores inovando por uma internet melhor.</p>
 
                         <a class="button-green for-firefox" href="http://www.mozilla.org/pt-BR/mission/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=no-profit_uptodateusers">Saiba mais</a>
                         <a class="button-green for-old-firefox" href="http://www.mozilla.org/pt-BR/mission/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=no-profit_users">Saiba mais</a>
