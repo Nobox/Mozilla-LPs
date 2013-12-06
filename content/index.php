@@ -53,12 +53,6 @@ require_once('../lang/lang-' . $lang . '.php');
                                     <strong class="download-title">Download now</strong>
                                 </span>
                             </a>
-                            <a class="download-link for-old-firefox" href="http://www.mozilla.org/pt-BR/firefox/new/#download-fx?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=upgrade_users" target="_blank">
-                                <span class="download-content">
-                                    <strong class="download-title">Atualize agora</strong>
-                                </span>
-                            </a>
-
                             <small class="download-other">
                                 <a href="http://www.mozilla.org/en-US/firefox/all/" target="_blank">Systems &amp; Languages</a> |
                                 <a href="http://www.mozilla.org/en-US/firefox/25.0.1/releasenotes/" target="_blank">What's New</a> |
@@ -98,6 +92,7 @@ require_once('../lang/lang-' . $lang . '.php');
                                 </span>
                             </p>
                         </li>
+                        <?php if ('en' == $lang): ?>
                         <li id="tab-sidebar" class="tab">
                             <i class="icon icon-sidebar" role="presentation"></i>
                             <h2><?php echo $trans['sidebar.title'] ?></h2>
@@ -108,6 +103,16 @@ require_once('../lang/lang-' . $lang . '.php');
                                 </a>
                             </p>
                         </li>
+                        <?php else: ?>
+                        <li id="tab-blog" class="tab">
+                            <i class="icon icon-blog" role="presentation"></i>
+                            <h2><?php echo $trans['blog.title'] ?></h2>
+                            <p>
+                                <?php echo $trans['blog.desc'] ?>
+                                <a class="link" href="<?php echo $trans['blog.url'] ?>?utm_source=VansLP&amp;utm_medium=Crosspromo&amp;utm_campaign=VansSurf&amp;utm_content=<?php echo $lang ?>" target="_blank"><?php echo $trans['learn_more'] ?></a>
+                            </p>
+                        </li>
+                        <?php endif ?>
                     </ul>
                 </div><!--/.row-->
             </main><!--/#main-->

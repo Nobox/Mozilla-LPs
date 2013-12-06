@@ -225,13 +225,13 @@ $tablist-height = em(220px)
         padding 0 5em
 
 #tab-sidebar
-    &:lang(es)
-        padding 0 1em
+    padding 0 2em
 
-    &:lang(en), &:lang(pt)
-        padding 0 2em
+#tab-blog
+    padding 0 5em
 
-    // hide divider
+#tab-sidebar, #tab-blog
+    // hide last divider
     &:after
         display none
 
@@ -242,7 +242,7 @@ $tablist-height = em(220px)
     margin 0 auto 2em
     size 96px 85px
     background-repeat no-repeat
-    image "../images/bg-section-icons.png" 341px 85px
+    image "../images/bg-section-icons.png" 454px 85px
 
 .icon-theme
     background-position 0 0
@@ -251,8 +251,11 @@ $tablist-height = em(220px)
     background-position -120px 0
 
 .icon-sidebar
-    width 96px
     background-position -223px 0
+
+.icon-blog
+    width 118px
+    background-position -336px 0
 
 
 /**
@@ -264,24 +267,6 @@ $tablist-height = em(220px)
     background url("../images/bg-content.jpg") repeat-x top
     border-top 1px solid white
 
-.panel
-    display none
-    margin-bottom em(50px)
-
-    h2
-        margin 0 0 1em
-        color $color-blue-light
-        font-size em(24px)
-        font-family 'Open Sans', sans-serif
-
-    p
-        margin 0
-        width 80%
-        font-size em(18px)
-
-#panel-1
-    p
-        width 60%
 
 /**
  * Footer
