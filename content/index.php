@@ -25,7 +25,7 @@ require_once('../lang/lang-' . $lang . '.php');
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title><?php echo $trans['site.title'] ?></title>
+        <title><?php echo $trans['site.title'] ?> – Mozilla</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
