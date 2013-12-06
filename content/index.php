@@ -7,10 +7,10 @@
     );
 
     $header_bgs = array(
-        '/images/bg-skateboard.jpg',
-        '/images/bg-page-surfer.jpg',
-        '/images/bg-rio-stairs.jpg',
-        '/images/bg-drumline.jpg'
+        'images/bg-skateboard.jpg',
+        'images/bg-page-surfer.jpg',
+        'images/bg-rio-stairs.jpg',
+        'images/bg-drumline.jpg'
     );
 
 ?><!DOCTYPE html>
