@@ -43,18 +43,18 @@
                     <h1 class="for-firefox"><strong>Use o Firefox.</strong> É mais rápido que os outros navegadores e fala a sua língua.</h1>
 
                     <ul id="features">
-                        <li>Rápido</li>
-                        <li>Privativo</li>
-                        <li class="last-child">Orgulhosamente<br>sem fins lucrativos</li>
+                        <li>Velocidade</li>
+                        <li>Privacidade</li>
+                        <li class="last-child">Princípios acima<br>dos lucros</li>
                     </ul>
                     <div id="downloads">
                         <div class="download-button for-old-firefox for-not-firefox">
-                            <a class="download-link for-not-firefox" href="http://www.mozilla.org/pt-BR/firefox/new/#download-fx?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=download_nonusers" target="_blank">
+                            <a class="download-link for-not-firefox" href="http://www.mozilla.org/pt-BR/firefox/new/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=download_nonusers#download-fx" target="_blank">
                                 <span class="download-content">
                                     <strong class="download-title">Baixe agora</strong>
                                 </span>
                             </a>
-                            <a class="download-link for-old-firefox" href="http://www.mozilla.org/pt-BR/firefox/new/#download-fx?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=upgrade_users" target="_blank">
+                            <a class="download-link for-old-firefox" href="http://www.mozilla.org/pt-BR/firefox/new/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=upgrade_users#download-fx" target="_blank">
                                 <span class="download-content">
                                     <strong class="download-title">Faça o Upgrade agora</strong>
                                 </span>
