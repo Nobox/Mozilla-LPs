@@ -103,7 +103,7 @@
 
                         <a class="button-green for-firefox" href="https://addons.mozilla.org/firefox/downloads/latest/46308/addon-46308-latest.xpi?src=dp-btn-primary?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_uptodateusers">Baixe o tradutor</a>
                         <a class="button-green for-old-firefox" href="https://addons.mozilla.org/firefox/downloads/latest/46308/addon-46308-latest.xpi?src=dp-btn-primary?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_users">Baixe o tradutor</a>
-                        <a class="button-green for-not-firefox" href="https://addons.mozilla.org/firefox/downloads/latest/46308/addon-46308-latest.xpi?src=dp-btn-primary?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_nonusers">Baixe o tradutor</a>
+                        <a class="button-green for-not-firefox" href="https://addons.mozilla.org/pt-BR/firefox/addon/google-translator-for-firefox/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_nonusers">Baixe o tradutor</a>
                     </div>
 
                     <div id="panel-2" class="panel" role="tabpanel" aria-labelledby="tab-2">
@@ -111,9 +111,9 @@
                         <img src="images/img-privacy.jpg" alt="">
                         <p>O Firefox respeita a sua privacidade e oferece a você o controle de seus dados com recursos como Não Me Rastreie e Navegação Privativa.</p>
 
-                        <a class="button-green for-firefox" href="http://www.mozilla.org/pt-BR/firefox/features/#advancedsecurity?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_uptodateusers">Saiba mais</a>
-                        <a class="button-green for-old-firefox" href="http://www.mozilla.org/pt-BR/firefox/features/#advancedsecurity?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_users">Saiba mais</a>
-                        <a class="button-green for-not-firefox" href="http://www.mozilla.org/pt-BR/firefox/features/#advancedsecurity?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_nonusers">Saiba mais</a>
+                        <a class="button-green for-firefox" href="http://www.mozilla.org/pt-BR/firefox/features/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_uptodateusers&amp;#advancedsecurity">Saiba mais</a>
+                        <a class="button-green for-old-firefox" href="http://www.mozilla.org/pt-BR/firefox/features/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_users&amp;#advancedsecurity">Saiba mais</a>
+                        <a class="button-green for-not-firefox" href="http://www.mozilla.org/pt-BR/firefox/features/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_nonusers&amp;#advancedsecurity">Saiba mais</a>
                     </div>
 
                     <div id="panel-3" class="panel" role="tabpanel" aria-labelledby="tab-3">
