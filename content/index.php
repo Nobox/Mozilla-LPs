@@ -18,7 +18,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Título - Mozilla</title>
+        <title>Use o Firefox | Navegador com velocidade, privacidade, e princípios acima dos lucros | Mozilla</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -87,7 +87,7 @@
                         <li id="tab-2" class="tab">
                             <i class="icon icon-privacy" role="presentation"></i>
                             <h2>Privativo</h2>
-                            <p>Nós respeitamos a sua privacidade e cada clique seu. <a href="#panel-2" role="tab" aria-selected="false">Saiba mais</a></p>
+                            <p>Nós respeitamos sua privacidade e deixamos você no controle sobre ela. <a href="#panel-2" role="tab" aria-selected="false">Saiba mais</a></p>
                         </li>
                         <li id="tab-3" class="tab">
                             <i class="icon icon-nonprofit" role="presentation"></i>
@@ -109,7 +109,7 @@
                     <div id="panel-2" class="panel" role="tabpanel" aria-labelledby="tab-2">
                         <h2>Privativo</h2>
                         <img src="images/img-privacy.jpg" alt="">
-                        <p>O Firefox respeita a sua privacidade deixando você com total controle dos seus dados com recursos como Não Me Rastreie e Navegação Privativa.</p>
+                        <p>O Firefox respeita a sua privacidade e oferece a você o controle de seus dados com recursos como Não Me Rastreie e Navegação Privativa.</p>
 
                         <a class="button-green for-firefox" href="http://www.mozilla.org/pt-BR/firefox/features/#advancedsecurity?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_uptodateusers">Saiba mais</a>
                         <a class="button-green for-old-firefox" href="http://www.mozilla.org/pt-BR/firefox/features/#advancedsecurity?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_users">Saiba mais</a>
@@ -119,7 +119,7 @@
                     <div id="panel-3" class="panel" role="tabpanel" aria-labelledby="tab-3">
                         <h2>Sem lucro</h2>
                         <img src="images/img-nonprofit.jpg" alt="">
-                        <p>A Firefox é uma organização sem ânimo de lucro apoiada por centenas de desenvolvidores brasileiros e apoiadores inovando por uma internet melhor.</p>
+                        <p>O Firefox é feito por uma organização sem fins lucrativos respaldada por centenas de desenvolvedores brasileiros e apoiadores que inovam por uma internet melhor.</p>
 
                         <a class="button-green for-firefox" href="http://www.mozilla.org/pt-BR/mission/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=no-profit_uptodateusers">Saiba mais</a>
                         <a class="button-green for-old-firefox" href="http://www.mozilla.org/pt-BR/mission/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=no-profit_users">Saiba mais</a>
