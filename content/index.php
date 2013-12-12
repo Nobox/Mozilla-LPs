@@ -7,10 +7,10 @@
     );
 
     $header_bgs = array(
-        'images/bg-skateboard.jpg',
-        'images/bg-page-surfer.jpg',
-        'images/bg-rio-stairs.jpg',
-        'images/bg-drumline.jpg'
+        'skateboard',
+        'page-surfer',
+        'rio-stairs',
+        'drumline'
     );
 
 ?><!DOCTYPE html>
@@ -23,7 +23,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/main.min.css">
         <link rel="stylesheet" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css">
 
         <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -43,7 +43,8 @@
                 <a href="https://www.mozilla.org/" id="tabzilla">mozilla</a>
             </div><!--/.row-->
 
-            <header id="header" role="banner" style="background-image: url('<?php echo $header_bgs[array_rand($header_bgs)] ?>')">
+            <?php $banner = $header_bgs[array_rand($header_bgs)] ?>
+            <header id="header" role="banner" style="background-image: url('images/bg-<?php echo $banner ?>.jpg')" data-banner="<?php echo $banner ?>">
                 <div class="row">
                     <img src="images/logo-firefox.png" alt="Firefox" width="216" height="81">
 
@@ -110,9 +111,9 @@
                         <img src="images/img-translate.jpg" alt="">
                         <p>Utilize este complemento para traduzir qualquer página para o português com apenas um clique. Baixe o Firefox e instale este complemento incrível.</p>
 
-                        <a class="button-green for-firefox" href="https://addons.mozilla.org/firefox/downloads/latest/46308/addon-46308-latest.xpi?src=dp-btn-primary?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_uptodateusers">Baixe o tradutor</a>
-                        <a class="button-green for-old-firefox" href="https://addons.mozilla.org/firefox/downloads/latest/46308/addon-46308-latest.xpi?src=dp-btn-primary?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_users">Baixe o tradutor</a>
-                        <a class="button-green for-not-firefox" href="https://addons.mozilla.org/pt-BR/firefox/addon/google-translator-for-firefox/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_nonusers">Baixe o tradutor</a>
+                        <a class="button-green for-firefox" data-type="up-to-date" href="https://addons.mozilla.org/firefox/downloads/latest/46308/addon-46308-latest.xpi?src=dp-btn-primary?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_uptodateusers" target="_blank">Baixe o tradutor</a>
+                        <a class="button-green for-old-firefox" data-type="upgrade" href="https://addons.mozilla.org/firefox/downloads/latest/46308/addon-46308-latest.xpi?src=dp-btn-primary?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_users" target="_blank">Baixe o tradutor</a>
+                        <a class="button-green for-not-firefox" data-type="non-user" href="https://addons.mozilla.org/pt-BR/firefox/addon/google-translator-for-firefox/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_nonusers" target="_blank">Baixe o tradutor</a>
                     </div>
 
                     <div id="panel-2" class="panel" role="tabpanel" aria-labelledby="tab-2">
@@ -120,9 +121,9 @@
                         <img src="images/img-privacy.jpg" alt="">
                         <p>O Firefox respeita a sua privacidade e oferece a você o controle de seus dados com recursos como Não Me Rastreie e Navegação Privativa.</p>
 
-                        <a class="button-green for-firefox" href="http://www.mozilla.org/pt-BR/firefox/features/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_uptodateusers&amp;#advancedsecurity">Saiba mais</a>
-                        <a class="button-green for-old-firefox" href="http://www.mozilla.org/pt-BR/firefox/features/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_users&amp;#advancedsecurity">Saiba mais</a>
-                        <a class="button-green for-not-firefox" href="http://www.mozilla.org/pt-BR/firefox/features/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_nonusers&amp;#advancedsecurity">Saiba mais</a>
+                        <a class="button-green for-firefox" data-type="up-to-date" href="http://www.mozilla.org/pt-BR/firefox/features/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_uptodateusers&amp;#advancedsecurity" target="_blank">Saiba mais</a>
+                        <a class="button-green for-old-firefox" data-type="upgrade" href="http://www.mozilla.org/pt-BR/firefox/features/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_users&amp;#advancedsecurity" target="_blank">Saiba mais</a>
+                        <a class="button-green for-not-firefox" data-type="non-user" href="http://www.mozilla.org/pt-BR/firefox/features/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_nonusers&amp;#advancedsecurity" target="_blank">Saiba mais</a>
                     </div>
 
                     <div id="panel-3" class="panel" role="tabpanel" aria-labelledby="tab-3">
@@ -130,9 +131,9 @@
                         <img src="images/img-nonprofit.jpg" alt="">
                         <p>O Firefox é feito por uma organização sem fins lucrativos respaldada por centenas de desenvolvedores brasileiros e apoiadores que inovam por uma internet melhor.</p>
 
-                        <a class="button-green for-firefox" href="http://www.mozilla.org/pt-BR/mission/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=no-profit_uptodateusers">Saiba mais</a>
-                        <a class="button-green for-old-firefox" href="http://www.mozilla.org/pt-BR/mission/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=no-profit_users">Saiba mais</a>
-                        <a class="button-green for-not-firefox" href="http://www.mozilla.org/pt-BR/mission/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=no-profit_nonusers">Saiba mais</a>
+                        <a class="button-green for-firefox" data-type="up-to-date" href="http://www.mozilla.org/pt-BR/mission/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=no-profit_uptodateusers" target="_blank">Saiba mais</a>
+                        <a class="button-green for-old-firefox" data-type="upgrade" href="http://www.mozilla.org/pt-BR/mission/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=no-profit_users" target="_blank">Saiba mais</a>
+                        <a class="button-green for-not-firefox" data-type="non-user" href="http://www.mozilla.org/pt-BR/mission/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=no-profit_nonusers" target="_blank">Saiba mais</a>
                     </div>
                 </div><!--/.row-->
             </main><!--/#main-->
