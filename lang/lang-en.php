@@ -22,8 +22,9 @@ $trans = array(
     'social.title' => 'Social',
     'social.desc' => 'Follow us for the latest Vans news.',
 
-    'sidebar.title' => 'Sidebar',
-    'sidebar.desc' => 'Keep up with the Vans Triple Crown while you browse.',
+    'blog.title' => 'Blog',
+    'blog.desc' => 'Check out the Mozilla Blog about Vans.',
+    'blog.url' => 'https://blog.mozilla.org/blog/2013/11/12/live-what-you-love-mozilla-firefox-the-vans-triple-crown-of-surfing/',
 
     'footer.follow' => 'Follow us:'
 );
