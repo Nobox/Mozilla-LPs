@@ -47,62 +47,43 @@
             <header id="header" role="banner" data-banner="<?php echo $banner ?>">
                 <img src="images/logo-firefox.png" alt="Firefox" width="154" height="47">
                 <div class="row">
-                    <h1>#Impacto<strong>Firefox</strong>OS</h1>
+                    <h1>#<strong>Firefox</strong>OS</h1>
                     <p>Conte em tum tweet qual é o impacto que, para você, o Firefox OS vai ter <br> no mundo e concorra a um <br> smartphone Firefox OS.</p>
                 </div><!--/.row-->
             </header><!--/#header-->
 
             <main id="main" role="main">
                 <div class="row">
-                    <ul id="tabs" role="tablist">
-                        <li id="tab-1" class="tab">
-                            <i class="icon icon-translate" role="presentation"></i>
-                            <h2>Traduza</h2>
-                            <p>Curta a experiência de ter a internet inteira no seu idioma. <a href="#panel-1" role="tab" aria-selected="true">Saiba mais</a></p>
-                        </li>
-                        <li id="tab-2" class="tab">
-                            <i class="icon icon-privacy" role="presentation"></i>
-                            <h2>Privativo</h2>
-                            <p>Nós respeitamos sua privacidade e deixamos você no controle sobre ela. <a href="#panel-2" role="tab" aria-selected="false">Saiba mais</a></p>
-                        </li>
-                        <li id="tab-3" class="tab">
-                            <i class="icon icon-nonprofit" role="presentation"></i>
-                            <h2>Sem lucro</h2>
-                            <p>Nossa missão sempre foi a mesma: inovar para você. <a href="#panel-3" role="tab" aria-selected="false">Saiba mais</a></p>
-                        </li>
-                    </ul>
-
-                    <div id="panel-1" class="panel" role="tabpanel" aria-labelledby="tab-1">
-                        <h2>Traduza</h2>
-                        <img src="images/img-translate.jpg" alt="">
-                        <p>Utilize este complemento para traduzir qualquer página para o português com apenas um clique. Baixe o Firefox e instale este complemento incrível.</p>
-
-                        <a class="button-green for-firefox" data-type="up-to-date" href="https://addons.mozilla.org/firefox/downloads/latest/46308/addon-46308-latest.xpi?src=dp-btn-primary?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_uptodateusers" target="_blank">Baixe o tradutor</a>
-                        <a class="button-green for-old-firefox" data-type="upgrade" href="https://addons.mozilla.org/firefox/downloads/latest/46308/addon-46308-latest.xpi?src=dp-btn-primary?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_users" target="_blank">Baixe o tradutor</a>
-                        <a class="button-green for-not-firefox" data-type="non-user" href="https://addons.mozilla.org/pt-BR/firefox/addon/google-translator-for-firefox/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=translate_nonusers" target="_blank">Baixe o tradutor</a>
-                    </div>
-
-                    <div id="panel-2" class="panel" role="tabpanel" aria-labelledby="tab-2">
-                        <h2>Privativo</h2>
-                        <img src="images/img-privacy.jpg" alt="">
-                        <p>O Firefox respeita a sua privacidade e oferece a você o controle de seus dados com recursos como Não Me Rastreie e Navegação Privativa.</p>
-
-                        <a class="button-green for-firefox" data-type="up-to-date" href="http://www.mozilla.org/pt-BR/firefox/features/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_uptodateusers&amp;#advancedsecurity" target="_blank">Saiba mais</a>
-                        <a class="button-green for-old-firefox" data-type="upgrade" href="http://www.mozilla.org/pt-BR/firefox/features/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_users&amp;#advancedsecurity" target="_blank">Saiba mais</a>
-                        <a class="button-green for-not-firefox" data-type="non-user" href="http://www.mozilla.org/pt-BR/firefox/features/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=private_nonusers&amp;#advancedsecurity" target="_blank">Saiba mais</a>
-                    </div>
-
-                    <div id="panel-3" class="panel" role="tabpanel" aria-labelledby="tab-3">
-                        <h2>Sem lucro</h2>
-                        <img src="images/img-nonprofit.jpg" alt="">
-                        <p>O Firefox é feito por uma organização sem fins lucrativos respaldada por centenas de desenvolvedores brasileiros e apoiadores que inovam por uma internet melhor.</p>
-
-                        <a class="button-green for-firefox" data-type="up-to-date" href="http://www.mozilla.org/pt-BR/mission/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=no-profit_uptodateusers" target="_blank">Saiba mais</a>
-                        <a class="button-green for-old-firefox" data-type="upgrade" href="http://www.mozilla.org/pt-BR/mission/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=no-profit_users" target="_blank">Saiba mais</a>
-                        <a class="button-green for-not-firefox" data-type="non-user" href="http://www.mozilla.org/pt-BR/mission/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=no-profit_nonusers" target="_blank">Saiba mais</a>
-                    </div>
+                    <h2>Prêmios</h2>
+                    <span class="left">Firefox OS da LGs</span>
+                    <span class="right">Firefox OS da Alcatel</span>
                 </div><!--/.row-->
             </main><!--/#main-->
+
+            <section id="participate">
+                <div class="row">
+                    <h2>Como participar:</h2>
+                    <ol>
+                        <li>Siga <b>@FirefoxBrasil</b> ou <b>@MozillaBrasil</b></li>
+                        <li>Tuíte sua resposta a nossas perguntas semanais usando <b>#FirefoxOs</b></li>
+                    </ol>
+                    <a href="//twitter.com/intent/user?screen_name=FirefoxBrasil" class="button follow-button participate-button" target="_blank">
+                        <strong class="follow-title">Siga @FirefoxBrasil</strong>
+                    </a>
+                    <a href="//twitter.com/intent/user?screen_name=MozillaBrasil" class="button follow-button participate-button" target="_blank">
+                        <strong class="follow-title">Siga @MozillaBrasil</strong>
+                    </a>
+                    <a href="//twitter.com/intent/tweet?text=%23FirefoxOS" class="button-green participate-button" target="_blank">
+                        <strong class="follow-title">Participe já</strong>
+                    </a>
+
+                    <p>
+                        Você pode enviar quantas respostas quiser. Quanto mais respostas enviar,<br> mais chances de ganhar.
+                    </p>
+
+                    <a class="terms" href="#terms">Termos e condições</a>
+                </div>
+            </section>
 
             <footer id="footer">
                 <div class="row">

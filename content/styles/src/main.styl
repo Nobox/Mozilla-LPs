@@ -17,7 +17,7 @@ $color-orange = #e66000
 
 .row
     margin 0 auto
-    padding 0 em(10px)
+    padding: 0 10.5em;
     width em(980px)
 
 #outer-wrapper
@@ -33,7 +33,7 @@ $color-orange = #e66000
 
 // Buttons
 .button, .button:link, .button:visited
-    display block
+    // display block
     background linear-gradient(#43a6e2,#277ac1)
     border 0
     border-radius .25em
@@ -42,7 +42,7 @@ $color-orange = #e66000
     font-family 'Open Sans', sans-serif
     text-align center
     text-decoration none
-    text-shadow 0 1px 0 rgba(#000, .25)
+    text-shadow 0 1px 0 rgba(#000, .65)
     transition all linear .25s
 
     &:hover, &:focus
@@ -62,33 +62,28 @@ $color-orange = #e66000
     background linear-gradient(#e39926, #c96a1e)
     font-weight bold
 
-.download-button
-    display block
 
-    .download-link
-        @extend .button-green
-
-    .download-content
-        display block
-        padding 1.5em 1em 1.5em 4em
-        background url("../images/download-arrow.png") no-repeat 1em center
-
-    .download-title
-        font-size em(24px)
-        font-weight 500
-
-.download-other
-    display block
-    padding .7em 0
-    font-size em(11px)
+.participate-button
+    padding .6em 1.5em .6em 0
+    font-size 22px
     text-align center
+    -webkit-box-shadow: 0 3px 1px 0 rgba(0,0,0,0.3);
+    box-shadow: 0 3px 1px 0 rgba(0,0,0,0.3);
+    cursor pointer
 
-    a
-        color white
-        text-decoration none
+    &.button-green
+        display block
+        max-width em(476px);
+        margin-bottom em(30px)
 
-        &:hover
-            text-decoration underline
+.follow-button, .follow-button:visited
+    display inline-block
+    margin 0 em(20px) em(20px) 0
+
+    strong
+        padding-left 3em
+        background url("../images/logo-tweet.png") no-repeat 1.4em 0.3em
+
 
 
 /**
@@ -134,7 +129,7 @@ $color-orange = #e66000
         margin-top em(16px)
 
     .row
-        padding 0 7em
+        padding 0 8em
 
     h1
         margin 4.6em 0 0
@@ -313,7 +308,26 @@ $tablist-height = em(220px)
 
 #main
     background url("../images/bg-content.jpg") repeat-x top
-    min-height em(460px)
+    min-height em(292px)
+    -webkit-box-shadow: inset 0 -30px 30px -30px rgba(0,0,0,0.2);
+    box-shadow: inset 0 -30px 30px -30px rgba(0,0,0,0.2);
+    color #484848
+    font-size em(16px)
+
+    h2
+        margin 0
+        padding 119px 0 28px
+        text-align center
+        font-size em(50px)
+
+    .right
+        float right
+
+    .row
+        background no-repeat center
+        background-image url("../images/bg-prize.png");
+        height 292px;
+        padding: 0 em(325px);
 
 .panel
     position relative
@@ -350,6 +364,42 @@ $tablist-height = em(220px)
     p
         width 75%
 
+/**
+* How to Participate section
+*/
+
+#participate
+    min-height em(552px)
+    color #484848
+    font-size em(18px)
+
+    h2
+        font-size em(42px)
+
+    a
+        color #fff
+
+        &.terms
+            color #484848
+            font-size 20px
+            font-family 'Open Sans Light', sans-serif
+            text-decoration none
+            border-bottom 1px solid #484848
+            margin-bottom em(60px)
+
+    p
+        margin-bottom em(60px)
+
+    ol
+        padding: 0 30px
+        line-height em(35px)
+        margin-bottom em(30px)
+
+        b
+            font-family 'Open Sans Light', sans-serif
+            font-style italic
+            font-weight bold
+
 
 /**
  * Footer
@@ -358,6 +408,7 @@ $tablist-height = em(220px)
 #footer
     clearfix()
     padding em(50px) 0
+    background url("../images/bg-content.jpg") repeat-x top
 
 .logo-mozilla
     display block
