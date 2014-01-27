@@ -18,7 +18,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Use o Firefox | Navegador com velocidade, privacidade, e princípios acima dos lucros | Mozilla</title>
+        <title>Firefox OS | Use #FirefoxOS para responder a nossas perguntas semanais sobre como o Firefox OS pode impactar o mundo e concorra.</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=1000px">
 
