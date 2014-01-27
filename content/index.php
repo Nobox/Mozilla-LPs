@@ -23,7 +23,7 @@
         <meta name="viewport" content="width=1000px">
 
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="styles/main.min.css">
+        <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css">
 
         <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -44,45 +44,11 @@
             </div><!--/.row-->
 
             <?php $banner = $header_bgs[array_rand($header_bgs)] ?>
-            <header id="header" role="banner" style="background-image: url('images/bg-<?php echo $banner ?>.jpg')" data-banner="<?php echo $banner ?>">
+            <header id="header" role="banner" data-banner="<?php echo $banner ?>">
+                <img src="images/logo-firefox.png" alt="Firefox" width="154" height="47">
                 <div class="row">
-                    <img src="images/logo-firefox.png" alt="Firefox" width="216" height="81">
-
-                    <h1 class="for-not-firefox"><strong>Use o Firefox</strong> <?php echo $headlines[array_rand($headlines)] ?></h1>
-                    <h1 class="for-old-firefox"><strong>Faça o upgrade do Firefox</strong> e seja mais rápido na web.</h1>
-                    <h1 class="for-firefox"><strong>Use o Firefox.</strong> É mais rápido que os outros navegadores e fala a sua língua.</h1>
-
-                    <ul id="features">
-                        <li>Velocidade</li>
-                        <li>Privacidade</li>
-                        <li class="last-child">Princípios acima<br>dos lucros</li>
-                    </ul>
-                    <div id="downloads">
-                        <div class="download-button for-old-firefox for-not-firefox">
-                            <a class="download-link for-not-firefox" href="http://www.mozilla.org/pt-BR/firefox/new/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=download_nonusers#download-fx" target="_blank">
-                                <span class="download-content">
-                                    <strong class="download-title">Baixe agora</strong>
-                                </span>
-                            </a>
-                            <a class="download-link for-old-firefox" href="http://www.mozilla.org/pt-BR/firefox/new/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=upgrade_users#download-fx" target="_blank">
-                                <span class="download-content">
-                                    <strong class="download-title">Faça o Upgrade agora</strong>
-                                </span>
-                            </a>
-
-                            <small class="download-other">
-                                <a href="http://www.mozilla.org/pt-BR/firefox/all/" target="_blank">Sistemas e idiomas</a> |
-                                <a href="http://www.mozilla.org/pt-BR/firefox/25.0.1/releasenotes/" target="_blank">O que há de novo</a> |
-                                <a href="http://www.mozilla.org/pt-BR/legal/privacy/firefox.html" target="_blank">Privacidade</a>
-                            </small>
-                        </div>
-                        <div class="download-translator for-firefox">
-                            <a class="button-orange" href="https://addons.mozilla.org/pt-BR/firefox/addon/google-translator-for-firefox/?utm_source=brazil_LP&amp;utm_medium=cta&amp;utm_campaign=branding_brazil&amp;utm_content=learnhow_uptodateusers" target="_blank">
-                                Instale o tradutor
-                            </a>
-                        </div>
-                    </div>
-
+                    <h1>#Impacto<strong>Firefox</strong>OS</h1>
+                    <p>Conte em tum tweet qual é o impacto que, para você, o Firefox OS vai ter <br> no mundo e concorra a um <br> smartphone Firefox OS.</p>
                 </div><!--/.row-->
             </header><!--/#header-->
 

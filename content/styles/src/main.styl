@@ -119,34 +119,40 @@ $color-orange = #e66000
 
 #header
     clearfix()
-    padding em(70px) 0
-    height em(640px)
-    background no-repeat center top
-    background-size cover
-    border-bottom 35px solid #00539f
+    padding em(20px) em(20px) em(70px)
+    height em(498px)
+    background #0f9fdb no-repeat center top
+    // background-size cover
     color white
+    font-family 'Open Sans Light', sans-serif
 
-    .is-firefox &
-        background-image url("../images/bg-skateboard.jpg") !important
+    background-image url("../images/bg-header.jpg");
 
-    .old-firefox &
-        background-image url("../images/bg-page-surfer.jpg") !important
+    p
+        max-width em(300px)
+        font-size em(18px)
+        margin-top em(16px)
+
+    .row
+        padding 0 7em
 
     h1
-        margin 1.5em 0
+        margin 4.6em 0 0
         color white
-        font-size em(48px)
+        font-size em(44px)
         letter-spacing -0.25px
         line-height 1.2
+        text-transform uppercase
+        font-style italic
+        font-weight bold
 
         &.for-firefox
             margin 1em 3em 1em 0
 
         strong
-            display block
-            font-family 'Open Sans', sans-serif
-            font-size 150% // 72px
-            font-weight normal
+            font-family 'Open Sans Heavy', sans-serif
+            // font-size 150% // 72px
+            font-weight bold
 
 #features
     clearfix()
@@ -307,7 +313,6 @@ $tablist-height = em(220px)
 
 #main
     background url("../images/bg-content.jpg") repeat-x top
-    border-top 1px solid white
     min-height em(460px)
 
 .panel
