@@ -70,6 +70,7 @@ $color-orange = #e66000
     -webkit-box-shadow: 0 3px 1px 0 rgba(0,0,0,0.3);
     box-shadow: 0 3px 1px 0 rgba(0,0,0,0.3);
     cursor pointer
+    font-family 'Open Sans', sans-serif
 
     &.button-green
         display block
@@ -79,6 +80,7 @@ $color-orange = #e66000
 .follow-button, .follow-button:visited
     display inline-block
     margin 0 em(20px) em(20px) 0
+    font-family 'Open Sans', sans-serif
 
     strong
         padding-left 3em
@@ -120,6 +122,9 @@ $color-orange = #e66000
     // background-size cover
     color white
     font-family 'Open Sans Light', sans-serif
+
+    -webkit-box-shadow: inset 0 -30px 30px -30px rgba(0,0,0,0.2);
+    box-shadow: inset 0 -30px 30px -30px rgba(0,0,0,0.2);
 
     background-image url("../images/bg-header.jpg");
 
@@ -409,6 +414,9 @@ $tablist-height = em(220px)
     clearfix()
     padding em(50px) 0
     background url("../images/bg-content.jpg") repeat-x top
+
+    .row
+        padding 0 8.2em 0 7.8em
 
 .logo-mozilla
     display block
