@@ -1,19 +1,4 @@
-<?php
-    // Random headers for non-Firefox users
-    $headlines = array(
-        'e seja mais rápido na web.',
-        'e navegue com paz de espírito.',
-        'e navegue por uma internet melhor.'
-    );
-
-    $header_bgs = array(
-        'skateboard',
-        'page-surfer',
-        'rio-stairs',
-        'drumline'
-    );
-
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <html class="no-js" lang="pt-BR">
     <head>
         <meta charset="utf-8">
@@ -23,7 +8,7 @@
         <meta name="viewport" content="width=1000px">
 
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/main.min.css">
         <link rel="stylesheet" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css">
 
         <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -42,9 +27,7 @@
             <div class="row">
                 <a href="https://www.mozilla.org/" id="tabzilla">mozilla</a>
             </div><!--/.row-->
-
-            <?php $banner = $header_bgs[array_rand($header_bgs)] ?>
-            <header id="header" role="banner" data-banner="<?php echo $banner ?>">
+            <header id="header" role="banner">
                 <img src="images/logo-firefox.png" alt="Firefox" width="154" height="47">
                 <div class="row">
                     <h1>#<strong>Firefox</strong>OS</h1>
