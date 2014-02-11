@@ -64,7 +64,7 @@ $color-orange = #e66000
 
 
 .participate-button
-    padding .6em 1.5em .6em 0
+    padding .6em .8em .6em 0
     font-size 22px
     text-align center
     -webkit-box-shadow: 0 3px 1px 0 rgba(0,0,0,0.3);
@@ -75,16 +75,19 @@ $color-orange = #e66000
     &.button-green
         display block
         max-width em(476px);
-        margin-bottom em(30px)
+        margin-bottom em(10px)
 
 .follow-button, .follow-button:visited
     display inline-block
-    margin 0 em(20px) em(20px) 0
+    margin 0 em(8px) 0 0
     font-family 'Open Sans', sans-serif
 
-    strong
-        padding-left 3em
-        background url("../images/logo-tweet.png") no-repeat 1.4em 0.3em
+    &.last
+        margin 0
+
+    b
+        padding-left 2.5em
+        background url("../images/logo-tweet.png") no-repeat 1em 0.3em
 
 
 
@@ -117,16 +120,19 @@ $color-orange = #e66000
 #header
     clearfix()
     padding em(20px) em(20px) em(70px)
-    height em(498px)
+    height em(500px)
     background #0f9fdb no-repeat center top
     // background-size cover
     color white
     font-family 'Open Sans Light', sans-serif
+    position relative
 
-    -webkit-box-shadow: inset 0 -30px 30px -30px rgba(0,0,0,0.2);
-    box-shadow: inset 0 -30px 30px -30px rgba(0,0,0,0.2);
+    -webkit-box-shadow inset 0 -30px 30px -30px rgba(0,0,0,0.2)
+    box-shadow inset 0 -30px 30px -30px rgba(0,0,0,0.2)
 
     background-image url("../images/bg-header.jpg");
+
+    border-bottom 2px solid #fff
 
     p
         max-width em(300px)
@@ -153,6 +159,20 @@ $color-orange = #e66000
             font-family 'Open Sans Heavy', sans-serif
             // font-size 150% // 72px
             font-weight bold
+
+    .scroll-down
+        position absolute
+        width 50px
+        height 50px
+        display block
+        background-color #fff
+        background-image url("../images/scroll-down-arrow.jpg")
+        background-position center 22px
+        background-repeat no-repeat
+        border-radius 30px
+        bottom -25px
+        right 50%
+        margin-right -25px
 
 #features
     clearfix()
@@ -386,25 +406,49 @@ $tablist-height = em(220px)
 
         &.terms
             color #484848
-            font-size 20px
+            font-size 14px
             font-family 'Open Sans Light', sans-serif
             text-decoration none
+            font-weight bold
             border-bottom 1px solid #484848
-            margin-bottom em(60px)
-
-    p
-        margin-bottom em(60px)
+            margin-bottom em(130px)
+            display inline-block
 
     ol
         padding: 0 30px
         line-height em(35px)
         margin-bottom em(30px)
 
+    p
+        font-size 14px
+
+    .list-item
+        display block
+
         b
             font-family 'Open Sans Light', sans-serif
             font-style italic
             font-weight bold
 
+    .btn-container
+        padding 20px 68px
+        margin 20px 0
+        background #fafafa
+        border 1px solid #f6f6f6
+        text-align center
+
+        strong
+            color #0f9fdb
+            font-style italic
+            font-weight bold
+            font-size 30px
+            letter-spacing -2px
+            display block
+            margin-bottom 20px
+
+        p
+            margin 0
+            font-size 16px
 
 /**
  * Footer

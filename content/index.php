@@ -8,7 +8,7 @@
         <meta name="viewport" content="width=1000px">
 
         <link rel="shortcut icon" href="favicon.ico">
-        <link rel="stylesheet" href="styles/main.min.css">
+        <link rel="stylesheet" href="styles/main.css">
         <link rel="stylesheet" href="//mozorg.cdn.mozilla.net/media/css/tabzilla-min.css">
 
         <script src="bower_components/html5shiv/dist/html5shiv.js"></script>
@@ -18,8 +18,9 @@
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-          ga('create', 'UA-35433268-47', 'usefirefox.org');
+          ga('create', 'UA-35433268-53', 'impactofirefoxos.com');
           ga('send', 'pageview');
+
         </script>
     </head>
     <body>
@@ -31,8 +32,9 @@
                 <img src="images/logo-firefox.png" alt="Firefox" width="154" height="47">
                 <div class="row">
                     <h1>#<strong>Firefox</strong>OS</h1>
-                    <p>Conte em tum tweet qual é o impacto que, para você, o Firefox OS vai ter <br> no mundo e concorra a um <br> smartphone Firefox OS.</p>
+                    <p>Tuíte sua resposta para nossa <br> pergunta semanal e concorra <br>a um smartphone Firefox OS!</p>
                 </div><!--/.row-->
+                <a href="#participate" class="scroll-down"></a>
             </header><!--/#header-->
 
             <main id="main" role="main">
@@ -46,22 +48,27 @@
             <section id="participate">
                 <div class="row">
                     <h2>Como participar:</h2>
-                    <ol>
-                        <li>Siga <b>@FirefoxBrasil</b> ou <b>@MozillaBrasil</b></li>
-                        <li>Tuíte sua resposta a nossas perguntas semanais usando <b>#FirefoxOs</b></li>
-                    </ol>
-                    <a href="//twitter.com/intent/user?screen_name=FirefoxBrasil" class="button follow-button participate-button" target="_blank">
-                        <strong class="follow-title">Siga @FirefoxBrasil</strong>
-                    </a>
-                    <a href="//twitter.com/intent/user?screen_name=MozillaBrasil" class="button follow-button participate-button" target="_blank">
-                        <strong class="follow-title">Siga @MozillaBrasil</strong>
-                    </a>
-                    <a href="//twitter.com/intent/tweet?text=%23FirefoxOS" class="button-green participate-button" target="_blank">
-                        <strong class="follow-title">Participe já</strong>
-                    </a>
+                    <span class="list-item">1. Siga <b>@FirefoxBrasil</b> ou <b>@MozillaBrasil</b></span>
+
+                    <div class="btn-container">
+                        <a href="//twitter.com/intent/user?screen_name=FirefoxBrasil" class="button follow-button participate-button" target="_blank">
+                            <b class="follow-title">Siga @FirefoxBrasil</b>
+                        </a>
+                        <a href="//twitter.com/intent/user?screen_name=MozillaBrasil" class="button follow-button participate-button last" target="_blank">
+                            <b class="follow-title">Siga @MozillaBrasil</b>
+                        </a>
+                    </div>
+                    <span class="list-item">2. Tuíte sua resposta a nossas perguntas semanais usando <b>#FirefoxOS</b></span>
+                    <div class="btn-container">
+                        <strong>Como um smartphone mais barato e potente pode impactar a vida dos estudantes?</strong>
+                        <a href="//twitter.com/intent/tweet?text=%23FirefoxOS" class="button-green participate-button" target="_blank">
+                            <b class="follow-title">Participe já</b>
+                        </a>
+                        <p>Responda a esta pergunta com #FirefoxOS e participe.</p>
+                    </div>
 
                     <p>
-                        Você pode enviar quantas respostas quiser. Quanto mais respostas enviar,<br> mais chances de ganhar.
+                        Você pode enviar quantas respostas quiser. Quanto mais respostas enviar, mais chances de ganhar.
                     </p>
 
                     <a class="terms" href="#terms">Termos e condições</a>
