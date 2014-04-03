@@ -501,3 +501,43 @@ $tablist-height = em(220px)
 .social-google
     @extend .social
     background-position -67px 0
+#terms-overlay
+    display none
+    position fixed
+    top 0
+    left 0
+    width 100%
+    height 100%
+    background rgba(15, 159, 219, 0.9)
+    z-index 2
+#terms-lightbox
+    display none
+    position fixed
+    width 80%
+    height 80%
+    background white
+    box-sizing auto
+    padding 20px
+    top 10%
+    left 10%
+    overflow-x hidden
+    overflow-y scroll
+    z-index 3
+    .terms-lightbox-close
+        display block
+        font-size 40px
+        line-height 40px
+        background none
+        border none
+        padding 0
+        margin 0
+        position fixed
+        top 5%
+        right 7%
+        color white
+    h4
+        margin 0
+        padding 0
+    h3
+        margin 0
+        padding 0

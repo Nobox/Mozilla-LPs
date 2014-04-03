@@ -20,6 +20,21 @@ class Mozilla
         $tablist = $('#tabs')
         $tabs = $tablist.find('.tab')
         $panels = $('#main').find('.panel')
+        $termsoverlay = $('#terms-overlay')
+        $termslightbox = $('#terms-lightbox')
+        $termscta = $('.js-terms')
+        $termsclosecta = $('.js-terms-close')
+
+        $termscta.on 'click', (e) ->
+            e.preventDefault()
+            $termsoverlay.fadeIn()
+            $termslightbox.fadeIn()
+
+        $termsclosecta.on 'click', (e) ->
+            e.preventDefault()
+            $termsoverlay.fadeOut()
+            $termslightbox.fadeOut()
+
 
         $tabs.on 'click', 'a[role="tab"]', (e) ->
             e.preventDefault()

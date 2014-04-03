@@ -23,10 +23,24 @@
     };
 
     Mozilla.prototype.events = function() {
-      var $downloads, $panels, $tablist, $tabs;
+      var $downloads, $panels, $tablist, $tabs, $termsclosecta, $termscta, $termslightbox, $termsoverlay;
       $tablist = $('#tabs');
       $tabs = $tablist.find('.tab');
       $panels = $('#main').find('.panel');
+      $termsoverlay = $('#terms-overlay');
+      $termslightbox = $('#terms-lightbox');
+      $termscta = $('.js-terms');
+      $termsclosecta = $('.js-terms-close');
+      $termscta.on('click', function(e) {
+        e.preventDefault();
+        $termsoverlay.fadeIn();
+        return $termslightbox.fadeIn();
+      });
+      $termsclosecta.on('click', function(e) {
+        e.preventDefault();
+        $termsoverlay.fadeOut();
+        return $termslightbox.fadeOut();
+      });
       $tabs.on('click', 'a[role="tab"]', function(e) {
         var $this, panel;
         e.preventDefault();

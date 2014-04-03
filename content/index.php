@@ -71,7 +71,7 @@
                         Você pode enviar quantas respostas quiser. Quanto mais respostas enviar, mais chances de ganhar.
                     </p>
 
-                    <a class="terms" href="#terms">Termos e condições</a>
+                    <a class="terms js-terms" href="#terms">Termos e condições</a>
                 </div>
             </section>
 
@@ -93,6 +93,12 @@
             </footer><!--/#footer-->
 
         </div><!--/#outer-wrapper-->
+
+        <div id="terms-overlay" class="js-terms-close"></div>
+        <div id="terms-lightbox">
+            <button class="terms-lightbox-close js-terms-close">X</button>
+            <?php include_once('partials/terms.php'); ?>
+        </div>
 
         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
