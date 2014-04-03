@@ -32,7 +32,7 @@
                 <img src="images/logo-firefox.png" alt="Firefox" width="154" height="47">
                 <div class="row">
                     <h1>#<strong>Firefox</strong>OS</h1>
-                    <p>Tuíte sua resposta para nossa <br> pergunta semanal e concorra <br>a um smartphone Firefox OS!</p>
+                    <p>Tuite sua resposta para nossa <br> pergunta semanal e concorra <br>a um smartphone Firefox OS!</p>
                 </div><!--/.row-->
                 <a href="#participate" class="scroll-down"></a>
             </header><!--/#header-->
@@ -58,7 +58,7 @@
                             <b class="follow-title">Siga @MozillaBrasil</b>
                         </a>
                     </div>
-                    <span class="list-item">2. Tuíte sua resposta a nossas perguntas semanais usando <b>#FirefoxOS</b></span>
+                    <span class="list-item">2. Tuite sua resposta a nossas perguntas semanais usando <b>#FirefoxOS</b></span>
                     <div class="btn-container">
                         <strong>Como um smartphone mais barato e potente pode impactar a vida dos estudantes?</strong>
                         <a href="//twitter.com/intent/tweet?text=%23FirefoxOS" class="button-green participate-button" target="_blank">
