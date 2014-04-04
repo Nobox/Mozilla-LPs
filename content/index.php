@@ -40,7 +40,7 @@
             <main id="main" role="main">
                 <div class="row">
                     <h2>Prêmios</h2>
-                    <span class="left">Firefox OS da LGs</span>
+                    <span class="left">Firefox OS da LG</span>
                     <span class="right">Firefox OS da Alcatel</span>
                 </div><!--/.row-->
             </main><!--/#main-->
